@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
+import { Text, Heading, Flex, Stack, Spacer} from "@chakra-ui/react";
 
 
 function Contact() {
     return(
-        <h1>Contact</h1>
+        
+           <Stack>
+           </Stack>
   
     )
 
