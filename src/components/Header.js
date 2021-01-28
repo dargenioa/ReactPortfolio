@@ -1,8 +1,8 @@
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from "@chakra-ui/react";
+import { Breadcrumb, BreadcrumbItem } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 
-function NavBar() {
+function Header() {
   return (
     <div>
       <Breadcrumb separator="|">
@@ -20,4 +20,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default Header;
