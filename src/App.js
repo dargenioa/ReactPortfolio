@@ -4,19 +4,18 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import DarkMode from "./components/DarkMode";
 import NavBar from "./components/NavBar";
-import { Text, Heading, Flex, Stack, Spacer} from "@chakra-ui/react";
+import { Text, Heading, Flex, HStack, Spacer} from "@chakra-ui/react";
 
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
-      <Flex>
+      <HStack m="10px">
         <DarkMode />
-        <Spacer />
         <NavBar />
         <Route exact path="/" component={Home} />
         <Route exact path="/portfolio" component={Portfolio} />
         <Route exact path="/contact" component={Contact} />
-      </Flex>
+      </HStack>
     </Router>
   );
 }
