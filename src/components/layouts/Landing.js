@@ -7,10 +7,10 @@ import DarkMode from "../../components/DarkMode";
 function LandingLayout(props) {
   return (
     <Flex direction="right" m="0 auto" {...props}>
-      <Box>
-        <Header />
-        {props.children}
-      </Box>
+        <Box>
+          <Header />
+          {props.children}
+        </Box>
     </Flex>
   );
 }

@@ -4,7 +4,7 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import DarkMode from "./components/DarkMode";
 import Header from "./components/sections/Header";
-import { Text, Heading, Flex, HStack, Spacer } from "@chakra-ui/react";
+import { Text, Heading, Flex, HStack, Spacer, Box } from "@chakra-ui/react";
 
 function App() {
   return (
