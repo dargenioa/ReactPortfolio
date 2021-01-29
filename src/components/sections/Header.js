@@ -34,6 +34,9 @@ const Header = (props) => {
       color={["primary.700", "primary.700"]}
       {...props}
     >
+      <Box pr={4}>
+        <DarkMode />
+      </Box>
       <Box display={{ base: "block", md: "none" }} onClick={toggleMenu}>
         {show ? <CloseIcon /> : <HamburgerIcon />}
       </Box>
@@ -47,9 +50,6 @@ const Header = (props) => {
           direction={["column", "row", "row", "row"]}
           pt={[4, 4, 0, 0]}
         >
-          <Box pr={4}>
-            <DarkMode />
-          </Box>
           <MenuItems to="/">Home</MenuItems>
           <MenuItems to="/portfolio">Portfolio </MenuItems>
           <MenuItems to="/faetures">Contact </MenuItems>
