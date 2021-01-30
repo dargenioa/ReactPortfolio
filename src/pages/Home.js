@@ -1,5 +1,6 @@
 import { Heading, Text, Stack, Center, Image, Box } from "@chakra-ui/react";
 import LandingLayout from "../components/layouts/Landing";
+import TextLoop from "react-text-loop";
 
 function Home() {
   return (
@@ -11,23 +12,24 @@ function Home() {
         bgRepeat="no-repeat"
         h="1000px"
         color="white"
-        p={17}
+        p={50}
       >
-        <Center>
-          <Image
-            src="https://res.cloudinary.com/dusgzehfe/image/upload/v1611960343/PortfolioPicture_nmjj7g.png"
-            boxSize="sm"
-            borderRadius="full"
-          />
-        </Center>
-        <Heading as="h1" size="4xl" align="center">
+        <Heading as="h1" fontSize="58px" align="center">
           Amanda D'Argenio
         </Heading>
-        <Heading size="md" p={10} align="center">
-          Full Stack Developer motivated by challenging projects and enjoys the
-          level of focus and problem solving that comes with software
-          development.
+        <Heading size="lg" pt={10} align="center">
+          Full Stack Developer
         </Heading>
+        <Center p={5}>
+          <TextLoop interval={2000}>
+            <Heading as="h6" size="md">Problem Solver</Heading>
+            <Heading as="h6" size="md">Motivated by Challening Projects</Heading>
+            <Heading as="h6" size="md">Great Listener</Heading>
+            <Heading as="h6" size="md">Team Collaborator</Heading>
+            <Heading as="h6" size="md">Effective Communicator</Heading>
+            <Heading as="h6" size="md">Adaptability</Heading>
+          </TextLoop>
+        </Center>
       </Stack>
     </div>
   );
