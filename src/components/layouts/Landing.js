@@ -8,10 +8,8 @@ function LandingLayout(props) {
   return (
     <div>
       <Flex direction="right" m="0 auto" {...props}>
-        <Box>
-          <Header />
-          {props.children}
-        </Box>
+        <Header />
+        {props.children}
       </Flex>
     </div>
   );

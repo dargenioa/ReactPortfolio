@@ -5,18 +5,21 @@ import {
   Flex,
 } from "@chakra-ui/react";
 
-function Footer() {
+function Footer(props) {
   return (
-    <Flex>
-      <Breadcrumb separator="|">
+    <Flex >
+      <Breadcrumb
+      separator="|"
+      fontSize="30px"
+      >
         <BreadcrumbItem>
-          <BreadcrumbLink href="#">Home</BreadcrumbLink>
+          <BreadcrumbLink href="https://github.com/dargenioa/">Github</BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbItem>
-          <BreadcrumbLink href="#">About</BreadcrumbLink>
+          <BreadcrumbLink href="https://www.linkedin.com/in/amandadargenio/">LinkedIn</BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbItem>
-          <BreadcrumbLink href="#">Contact</BreadcrumbLink>
+          <BreadcrumbLink href="#">Resume</BreadcrumbLink>
         </BreadcrumbItem>
       </Breadcrumb>
     </Flex>

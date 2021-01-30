@@ -1,4 +1,13 @@
-import { Heading, Text, Stack, Center, Image, Box } from "@chakra-ui/react";
+import {
+  Heading,
+  Text,
+  Stack,
+  Center,
+  Image,
+  Box,
+  Spacer,
+  Container,
+} from "@chakra-ui/react";
 import LandingLayout from "../components/layouts/Landing";
 import TextLoop from "react-text-loop";
 import Footer from "../components/sections/Footer";
@@ -11,7 +20,7 @@ function Home() {
         bgImage="url(https://res.cloudinary.com/dusgzehfe/image/upload/v1611950774/portfolio-background_g9lw6j.jpg)"
         bgPosition="cover"
         bgRepeat="no-repeat"
-        h="1000px"
+        h="600px"
         color="white"
         p={50}
       >
@@ -23,18 +32,30 @@ function Home() {
         </Heading>
         <Center p={5}>
           <TextLoop interval={2000}>
-            <Heading as="h6" size="md">Problem Solver</Heading>
-            <Heading as="h6" size="md">Motivated by Challening Projects</Heading>
-            <Heading as="h6" size="md">Great Listener</Heading>
-            <Heading as="h6" size="md">Team Collaborator</Heading>
-            <Heading as="h6" size="md">Effective Communicator</Heading>
-            <Heading as="h6" size="md">Adaptability</Heading>
+            <Heading as="h6" size="md">
+              Problem Solver
+            </Heading>
+            <Heading as="h6" size="md">
+              Motivated by Challening Projects
+            </Heading>
+            <Heading as="h6" size="md">
+              Great Listener
+            </Heading>
+            <Heading as="h6" size="md">
+              Team Collaborator
+            </Heading>
+            <Heading as="h6" size="md">
+              Effective Communicator
+            </Heading>
+            <Heading as="h6" size="md">
+              Adaptability
+            </Heading>
           </TextLoop>
         </Center>
-        <Center>
-        <Footer />
-        </Center>
       </Stack>
+      <Center>
+        <Footer />
+      </Center>
     </div>
   );
 }
