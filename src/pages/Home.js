@@ -1,6 +1,7 @@
 import { Heading, Text, Stack, Center, Image, Box } from "@chakra-ui/react";
 import LandingLayout from "../components/layouts/Landing";
 import TextLoop from "react-text-loop";
+import Footer from "../components/sections/Footer";
 
 function Home() {
   return (
@@ -29,6 +30,9 @@ function Home() {
             <Heading as="h6" size="md">Effective Communicator</Heading>
             <Heading as="h6" size="md">Adaptability</Heading>
           </TextLoop>
+        </Center>
+        <Center>
+        <Footer />
         </Center>
       </Stack>
     </div>
