@@ -17,7 +17,7 @@ function Home() {
         <Heading as="h1" fontSize="58px" align="center">
           Amanda D'Argenio
         </Heading>
-        <Heading size="lg" pt={10} align="center">
+        <Heading size="xl" pt={10} align="center">
           Full Stack Developer
         </Heading>
         <Center p={5}>
