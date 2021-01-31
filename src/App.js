@@ -3,8 +3,8 @@ import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import DarkMode from "./components/DarkMode";
-import Header from "./components/sections/Header";
 import Footer from "./components/sections/Footer";
+
 
 import { Text, Heading, Flex, HStack, Spacer, Box } from "@chakra-ui/react";
 
