@@ -46,21 +46,28 @@ function Contact() {
             bgClip="text"
             size="md"
           >
-            Email:  <span style={{color: "white"}}><a href="mailto:dargenioa14@gmail.com">dargenioa14@gmail.com</a></span>
+            Email:  <span style={{color: "white"}}><a target="blank" href="mailto:dargenioa14@gmail.com">dargenioa14@gmail.com</a></span>
           </Heading>
           <Heading
             bgGradient="linear(to-l ,#FF0080, #7928CA)"
             bgClip="text"
             size="md"
           >
-            Github: <span style={{color: "white"}}><a href="https://github.com/dargenioa/">dargenioa</a></span>
+            Github: <span style={{color: "white"}}><a target="blank" href="https://github.com/dargenioa/">dargenioa</a></span>
           </Heading>
           <Heading
             bgGradient="linear(to-l ,#FF0080, #7928CA)"
             bgClip="text"
             size="md"
           >
-            Resume:
+            Resume:  <span style={{color: "white"}}><a target="blank" href="https://drive.google.com/file/d/11uUKblrXRGSgKLXdtzU6nit2Ok7PV2Du/view?usp=sharing">View PDF</a></span>
+          </Heading>
+          <Heading
+            bgGradient="linear(to-l ,#FF0080, #7928CA)"
+            bgClip="text"
+            size="md"
+          >
+            LinkedIn:  <span style={{color: "white"}}><a target="blank" href="https://www.linkedin.com/in/amandadargenio/">Visit my LinkedIn Profile</a></span>
           </Heading>
         </Stack>
       </div>
