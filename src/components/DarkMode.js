@@ -1,19 +1,41 @@
-import { useColorMode, IconButton } from "@chakra-ui/react";
+import {
+  useColorMode,
+  IconButton,
+  Box,
+  useColorModeValue,
+  Flex,
+} from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+import Header from "../components/sections/Header";
 
 function DarkMode() {
-const { colorMode, toggleColorMode } = useColorMode()
+  const { colorMode, toggleColorMode } = useColorMode();
+  const bg = useColorModeValue("gray.200", "gray.900");
+  const color = useColorModeValue("gray.800", "gray.100");
 
-return(
-    <IconButton
-    aria-label="Toggle Dark Switch"
-    icon={colorMode === "dark" ? <SunIcon /> : <MoonIcon /> }
-    onClick={toggleColorMode}
-
-    />
-)
-
-
+  return (
+    <Flex
+    bg={bg}
+    color={color}
+    >
+      <Box>
+        <IconButton
+          aria-label="Toggle Dark Switch"
+          p={2}
+          m={2}
+          icon={colorMode === "dark" ? <SunIcon /> : <MoonIcon />}
+          onClick={toggleColorMode}
+          bg="gray.800"
+          color="white"
+        />
+      </Box>
+      <Box>
+        <Header>
+          Hello
+        </Header>
+      </Box>
+    </Flex>
+  );
 }
 
 export default DarkMode;

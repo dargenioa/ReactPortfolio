@@ -2,15 +2,21 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
+  Center,
   Flex,
 } from "@chakra-ui/react";
 
-function Footer(props) {
+function Footer() {
   return (
-    <Flex >
+    <Center
+    h="150px"
+    bgGradient="linear(to-l, #7928CA,#FF0080)"
+    pb={7}
+    
+    >
       <Breadcrumb
       separator="|"
-      fontSize="30px"
+      fontSize="20px"
       >
         <BreadcrumbItem>
           <BreadcrumbLink href="https://github.com/dargenioa/">Github</BreadcrumbLink>
@@ -19,10 +25,10 @@ function Footer(props) {
           <BreadcrumbLink href="https://www.linkedin.com/in/amandadargenio/">LinkedIn</BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbItem>
-          <BreadcrumbLink href="#">Resume</BreadcrumbLink>
+          <BreadcrumbLink href="mailto:dargenioa14@gmail.com">Email</BreadcrumbLink>
         </BreadcrumbItem>
       </Breadcrumb>
-    </Flex>
+    </Center>
   );
 }
 

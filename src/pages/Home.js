@@ -17,17 +17,29 @@ function Home() {
     <div>
       <LandingLayout />
       <Stack
-        bgImage="url(https://res.cloudinary.com/dusgzehfe/image/upload/v1611950774/portfolio-background_g9lw6j.jpg)"
+        bgGradient="linear(to-l, gray.700 ,black)"
         bgPosition="cover"
         bgRepeat="no-repeat"
         h="600px"
         color="white"
         p={50}
       >
-        <Heading as="h1" fontSize="58px" align="center">
+        <Heading
+          as="h1"
+          fontSize="58px"
+          align="center"
+          bgGradient="linear(to-l, #7928CA,#FF0080)"
+          bgClip="text"
+        >
           Amanda D'Argenio
         </Heading>
-        <Heading size="xl" pt={10} align="center">
+        <Heading
+          bgGradient="linear(to-l ,#FF0080, #7928CA)"
+          bgClip="text"
+          size="xl"
+          pt={10}
+          align="center"
+        >
           Full Stack Developer
         </Heading>
         <Center p={5}>
@@ -53,9 +65,6 @@ function Home() {
           </TextLoop>
         </Center>
       </Stack>
-      <Center>
-        <Footer />
-      </Center>
     </div>
   );
 }
