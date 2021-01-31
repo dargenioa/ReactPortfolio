@@ -6,7 +6,7 @@ import {
   Container,
   Flex,
   Button,
-  ScaleFade
+  ScaleFade,
 } from "@chakra-ui/react";
 
 //   * Project title
@@ -17,11 +17,10 @@ import {
 
 //   * GIF or screenshot of the deployed application
 
-
 function Project(props) {
 
   return (
-    <SimpleGrid columns={2}>
+    <SimpleGrid columns={2} spacing={10} minChildWidth="120px">
       <Box boxSize="md">
         <Image src={props.image}></Image>
         {props.title}
