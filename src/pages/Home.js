@@ -10,7 +10,6 @@ import {
 } from "@chakra-ui/react";
 import LandingLayout from "../components/layouts/Landing";
 import TextLoop from "react-text-loop";
-import Footer from "../components/sections/Footer";
 
 function Home() {
   return (
