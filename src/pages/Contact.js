@@ -67,7 +67,7 @@ function Contact() {
             bgClip="text"
             size="md"
           >
-            LinkedIn:  <span style={{color: "white"}}><a target="blank" href="https://www.linkedin.com/in/amandadargenio/">Visit my LinkedIn Profile</a></span>
+            LinkedIn:  <span style={{color: "white"}}><a target="blank" href="https://www.linkedin.com/in/amandadargenio/">Visit my LinkedIn</a></span>
           </Heading>
         </Stack>
       </div>
