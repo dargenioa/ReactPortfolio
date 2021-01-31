@@ -7,6 +7,9 @@ import {
   Flex,
   Button,
   ScaleFade,
+  Text,
+  Center,
+  Link
 } from "@chakra-ui/react";
 
 //   * Project title
@@ -18,16 +21,34 @@ import {
 //   * GIF or screenshot of the deployed application
 
 function Project(props) {
-
   return (
-    <SimpleGrid columns={2} spacing={10} minChildWidth="120px">
-      <Box boxSize="md">
-        <Image src={props.image}></Image>
+
+      <Box
+        boxShadow="dark-lg"
+        rounded="md"
+        bg="white"
+        boxSize="sm"
+        height="300px"
+      >
+        <Image
+        src={props.image}
+        />
+        <Center>
+          
+        </Center>
+        <Text
+        align="center"
+        color="gray.800">
         {props.title}
-        {props.deploy}
-        {props.github}
+        </Text>
+        <Link
+        color="gray.800"
+        href={props.deploy}></Link>
+        <Link
+        color="gray.800"
+        href={props.github}>
+        </Link>
       </Box>
-    </SimpleGrid>
   );
 }
 
