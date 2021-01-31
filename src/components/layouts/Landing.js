@@ -1,8 +1,6 @@
 import React from "react";
 import { Box, Flex, Spacer } from "@chakra-ui/react";
-import Header from "../sections/Header";
-import Footer from "../sections/Footer";
-import DarkMode from "../../components/DarkMode";
+
 
 function LandingLayout(props) {
   return (

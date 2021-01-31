@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
-import DarkMode from "./components/DarkMode";
+import DarkMode from "./components/layouts/DarkMode";
 import Footer from "./components/sections/Footer";
 
 

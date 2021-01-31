@@ -6,7 +6,7 @@ import {
   Flex,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-import Header from "../components/sections/Header";
+import Header from "../sections/Header";
 
 function DarkMode() {
   const { colorMode, toggleColorMode } = useColorMode();

@@ -27,13 +27,14 @@ function Project(props) {
       rounded="md"
       bg="white"
       boxSize="xsm"
-      height="305px"
+      height="330px"
       m={2}
     >
       <Text align="center" fontWeight="bold" color="gray.800" p={1}>
         {props.title}
       </Text>
-      <Image src={props.image} />
+      <Image
+      src={props.image} />
       <Text align="center" color="gray.800">
         <Link target="blank" href={props.deploy} align="center">
           Deployed Application

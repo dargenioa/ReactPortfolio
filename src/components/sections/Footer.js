@@ -19,13 +19,13 @@ function Footer() {
       fontSize="20px"
       >
         <BreadcrumbItem>
-          <BreadcrumbLink href="https://github.com/dargenioa/">Github</BreadcrumbLink>
+          <BreadcrumbLink target="blank" href="https://github.com/dargenioa/">Github</BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbItem>
-          <BreadcrumbLink href="https://www.linkedin.com/in/amandadargenio/">LinkedIn</BreadcrumbLink>
+          <BreadcrumbLink target="blank" href="https://www.linkedin.com/in/amandadargenio/">LinkedIn</BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbItem>
-          <BreadcrumbLink href="mailto:dargenioa14@gmail.com">Email</BreadcrumbLink>
+          <BreadcrumbLink target="blank" href="mailto:dargenioa14@gmail.com">Email</BreadcrumbLink>
         </BreadcrumbItem>
       </Breadcrumb>
     </Center>

@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Box, Flex, Text, Button, Stack } from "@chakra-ui/react";
-import DarkMode from "../DarkMode";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 
 const MenuItems = (props) => {
