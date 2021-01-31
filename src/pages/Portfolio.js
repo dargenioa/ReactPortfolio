@@ -19,9 +19,40 @@ function Portfolio() {
         <Project
           image="https://res.cloudinary.com/dusgzehfe/image/upload/v1612056726/Screen_Shot_2021-01-30_at_8.31.09_PM_prbwkq.png"
           title="Quokka Marketplace"
-          deploy="marketplace"
-          github="marketplace"
+          deploy="https://projecttwo-rutgers.herokuapp.com/"
+          github="https://github.com/dargenioa/quokka-marketplace"
         />
+                <Project
+          image="https://res.cloudinary.com/dusgzehfe/image/upload/v1612056726/Screen_Shot_2021-01-30_at_8.31.09_PM_prbwkq.png"
+          title="Quokka Marketplace"
+          deploy="https://projecttwo-rutgers.herokuapp.com/"
+          github="https://github.com/dargenioa/quokka-marketplace"
+        />
+                <Project
+          image="https://res.cloudinary.com/dusgzehfe/image/upload/v1612056726/Screen_Shot_2021-01-30_at_8.31.09_PM_prbwkq.png"
+          title="Quokka Marketplace"
+          deploy="https://projecttwo-rutgers.herokuapp.com/"
+          github="https://github.com/dargenioa/quokka-marketplace"
+        />
+                <Project
+          image="https://res.cloudinary.com/dusgzehfe/image/upload/v1612056726/Screen_Shot_2021-01-30_at_8.31.09_PM_prbwkq.png"
+          title="Quokka Marketplace"
+          deploy="https://projecttwo-rutgers.herokuapp.com/"
+          github="https://github.com/dargenioa/quokka-marketplace"
+        />
+                <Project
+          image="https://res.cloudinary.com/dusgzehfe/image/upload/v1612056726/Screen_Shot_2021-01-30_at_8.31.09_PM_prbwkq.png"
+          title="Quokka Marketplace"
+          deploy="https://projecttwo-rutgers.herokuapp.com/"
+          github="https://github.com/dargenioa/quokka-marketplace"
+        />
+                <Project
+          image="https://res.cloudinary.com/dusgzehfe/image/upload/v1612056726/Screen_Shot_2021-01-30_at_8.31.09_PM_prbwkq.png"
+          title="Quokka Marketplace"
+          deploy="https://projecttwo-rutgers.herokuapp.com/"
+          github="https://github.com/dargenioa/quokka-marketplace"
+        />
+        
 
       </SimpleGrid>
     </>

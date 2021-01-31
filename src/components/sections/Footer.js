@@ -11,7 +11,7 @@ function Footer() {
     <Center
     h="150px"
     bgGradient="linear(to-l, #7928CA,#FF0080)"
-    pb={7}
+    pb={20}
     
     >
       <Breadcrumb

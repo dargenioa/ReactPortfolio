@@ -9,7 +9,7 @@ import {
   ScaleFade,
   Text,
   Center,
-  Link
+  Link,
 } from "@chakra-ui/react";
 
 //   * Project title
@@ -22,33 +22,29 @@ import {
 
 function Project(props) {
   return (
-
-      <Box
-        boxShadow="dark-lg"
-        rounded="md"
-        bg="white"
-        boxSize="sm"
-        height="300px"
-      >
-        <Image
-        src={props.image}
-        />
-        <Center>
-          
-        </Center>
-        <Text
-        align="center"
-        color="gray.800">
+    <Box
+      boxShadow="dark-lg"
+      rounded="md"
+      bg="white"
+      boxSize="xsm"
+      height="305px"
+      m={2}
+    >
+      <Text align="center" fontWeight="bold" color="gray.800" p={1}>
         {props.title}
-        </Text>
-        <Link
-        color="gray.800"
-        href={props.deploy}></Link>
-        <Link
-        color="gray.800"
-        href={props.github}>
+      </Text>
+      <Image src={props.image} />
+      <Text align="center" color="gray.800">
+        <Link target="blank" href={props.deploy} align="center">
+          Deployed Application
         </Link>
-      </Box>
+      </Text>
+      <Text color="gray.800" align="center">
+        <Link target="blank" href={props.github}>
+          Github Repository
+        </Link>
+      </Text>
+    </Box>
   );
 }
 
