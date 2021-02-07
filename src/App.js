@@ -6,7 +6,6 @@ import DarkMode from "./components/layouts/DarkMode";
 import Footer from "./components/sections/Footer";
 
 
-import { Text, Heading, Flex, HStack, Spacer, Box } from "@chakra-ui/react";
 
 function App() {
   return (
@@ -26,9 +25,7 @@ function App() {
           <Contact />
         </Route>
       </Switch>
-      <Footer
-      
-      />
+      <Footer />
     </Router>
   );
 }
