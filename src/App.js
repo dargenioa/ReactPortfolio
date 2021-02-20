@@ -4,6 +4,7 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import DarkMode from "./components/layouts/DarkMode";
 import Footer from "./components/sections/Footer";
+import { Flex } from "@chakra-ui/react"
 
 
 

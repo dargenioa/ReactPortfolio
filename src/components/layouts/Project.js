@@ -20,7 +20,7 @@ import {
 
 //   * GIF or screenshot of the deployed application
 
-function Project(props) {
+function Project({project}) {
   return (
     <Box
       boxShadow="dark-lg"
@@ -31,17 +31,17 @@ function Project(props) {
       m={2}
     >
       <Text align="center" fontWeight="bold" color="gray.800" p={1}>
-        {props.title}
+        {project.title}
       </Text>
       <Image
-      src={props.image} />
+      src={project.image} />
       <Text align="center" color="gray.800">
-        <Link target="blank" href={props.deploy} align="center">
+        <Link target="blank" href={project.deploy} align="center">
           Deployed Application
         </Link>
       </Text>
       <Text color="gray.800" align="center">
-        <Link target="blank" href={props.github}>
+        <Link target="blank" href={project.github}>
           Github Repository
         </Link>
       </Text>
