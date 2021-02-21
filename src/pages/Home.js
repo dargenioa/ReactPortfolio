@@ -15,7 +15,7 @@ function Home() {
   return (
     <div>
       <Stack
-        bgImage="url('https://res.cloudinary.com/dusgzehfe/image/upload/o_90/v1613872740/purple-cyber-hexagon-circuit-future-technology-concept-background_42077-4614_uatsbd.jpg')"
+        bgImage="url('https://res.cloudinary.com/dusgzehfe/image/upload/v1613873673/1098109_qmuhay.jpg')"
         bgPosition="center"
         bgRepeat="no-repeat"
         bgSize="cover"
