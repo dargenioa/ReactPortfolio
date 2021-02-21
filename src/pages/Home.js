@@ -15,7 +15,7 @@ function Home() {
   return (
     <div>
       <Stack
-        bgImage="url('https://res.cloudinary.com/dusgzehfe/image/upload/v1613873673/1098109_qmuhay.jpg')"
+        bgColor="black"
         bgPosition="center"
         bgRepeat="no-repeat"
         bgSize="cover"

@@ -7,7 +7,7 @@ import {
 } from "@chakra-ui/react";
 import "./sections.css";
 
-function Footer() {
+function Footer(props) {
   return (
     // position: fixed;
     // left: 0;
@@ -22,9 +22,13 @@ function Footer() {
       left={0}
       bottom={0}
       width="100%"
-      bgGradient="linear(to-l, #7928CA,#FF0080)"
+      // bgGradient="linear(to-l, #7928CA,#FF0080)"
+      bg={["primary.500", "primary.500"]}
+      color={["primary.700", "primary.700"]}
       textAlign="center"
       maxHeight="5vh"
+      {...props}
+
       
     >
       <BreadcrumbItem>
