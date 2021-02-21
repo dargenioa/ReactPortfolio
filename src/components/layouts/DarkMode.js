@@ -25,8 +25,8 @@ function DarkMode() {
           m={2}
           icon={colorMode === "dark" ? <SunIcon /> : <MoonIcon />}
           onClick={toggleColorMode}
-          bg="gray.800"
-          color="white"
+          bg={bg}
+          color={color}
         />
       </Box>
       <Box>
