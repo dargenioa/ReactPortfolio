@@ -9,6 +9,7 @@ import {
 function Footer(props) {
   return (
     <Breadcrumb
+      zIndex={1}
       separator="|"
       fontSize="20px"
       className="footer"
@@ -21,8 +22,6 @@ function Footer(props) {
       textAlign="center"
       maxHeight="5vh"
       {...props}
-
-      
     >
       <BreadcrumbItem>
         <BreadcrumbLink target="blank" href="https://github.com/dargenioa/">

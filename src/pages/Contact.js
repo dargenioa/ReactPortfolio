@@ -24,19 +24,21 @@ function Contact() {
   function SubmitButton() {
     return (
       <>
-        <Popover>
-          <PopoverTrigger>
-            <Button bgColor="#7928CA">Submit</Button>
-          </PopoverTrigger>
-          <PopoverContent color="black">
-            <PopoverArrow />
-            <PopoverCloseButton />
-            <PopoverHeader>Confirmation</PopoverHeader>
-            <PopoverBody>
-              Thank you for visiting! I will contact you soon.
-            </PopoverBody>
-          </PopoverContent>
-        </Popover>
+        <Box>
+          <Popover>
+            <PopoverTrigger>
+              <Button bgColor="#7928CA">Submit</Button>
+            </PopoverTrigger>
+            <PopoverContent color="black">
+              <PopoverArrow />
+              <PopoverCloseButton />
+              <PopoverHeader>Confirmation</PopoverHeader>
+              <PopoverBody>
+                Thank you for visiting! I will contact you soon.
+              </PopoverBody>
+            </PopoverContent>
+          </Popover>
+        </Box>
       </>
     );
   }
