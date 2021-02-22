@@ -1,4 +1,3 @@
-import React, { useDisclosure } from "react";
 import {
   SimpleGrid,
   Box,
@@ -10,6 +9,10 @@ import {
   Text,
   Center,
   Link,
+  Breadcrumb,
+  BreadcrumbLink,
+  BreadcrumbItem,
+  Spacer,
 } from "@chakra-ui/react";
 
 //   * Project title
@@ -20,31 +23,44 @@ import {
 
 //   * GIF or screenshot of the deployed application
 
-function Project({project}) {
+function Project({ project }) {
   return (
     <Box
       boxShadow="dark-lg"
       rounded="md"
       bg="white"
-      boxSize="xsm"
-      height="330px"
-      m={2}
+      boxSize="100%"
+      height="100%"
     >
-      <Text align="center" fontWeight="bold" color="gray.800" p={1}>
-        {project.title}
-      </Text>
-      <Image
-      src={project.image} />
-      <Text align="center" color="gray.800">
-        <Link target="blank" href={project.deploy} align="center">
-          Deployed Application
-        </Link>
-      </Text>
-      <Text color="gray.800" align="center">
-        <Link target="blank" href={project.github}>
-          Github Repository
-        </Link>
-      </Text>
+      <Box>
+        <Text
+          fontFamily="Yeseva One"
+          align="center"
+          color="gray.800"
+          fontWeight="bold"
+          p={1}
+        >
+          {project.title}
+        </Text>
+      </Box>
+      <Box>
+        <Image src={project.image} />
+      </Box>
+      <Box fontWeight="bold" p={1} textAlign="center" separator="|">
+        <Box>
+          <Link
+            color="purple.600"
+            target="blank"
+            href={project.deploy}
+            align="center"
+          >
+            Deployed Application |{" "}
+            <Link target="blank" href={project.github}>
+              Github Repository
+            </Link>
+          </Link>
+        </Box>
+      </Box>
     </Box>
   );
 }

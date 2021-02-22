@@ -1,79 +1,169 @@
-import { Text, Heading, Flex, Stack, Spacer} from "@chakra-ui/react";
-import LandingLayout from "../components/layouts/Landing";
-
+import React from "react";
+import { Text, Heading, Flex, Stack, Spacer, Box } from "@chakra-ui/react";
+import {
+  FormControl,
+  FormLabel,
+  FormErrorMessage,
+  Input,
+  FormHelperText,
+  SimpleGrid,
+  Textarea,
+  AlertDialog,
+  Button,
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  PopoverHeader,
+  PopoverBody,
+  PopoverFooter,
+  PopoverArrow,
+  PopoverCloseButton,
+} from "@chakra-ui/react";
 
 function Contact() {
-    return(
-        
-        <div>
-        <LandingLayout />
-        <Stack
-          bgGradient="linear(to-l, gray.700 ,black)"
-          bgPosition="cover"
-          bgRepeat="no-repeat"
-          h="600px"
-          color="white"
-          p={10}
+  function SubmitButton() {
+    return (
+      <>
+        <Popover>
+          <PopoverTrigger>
+            <Button bgColor="#7928CA">Submit</Button>
+          </PopoverTrigger>
+          <PopoverContent color="black">
+            <PopoverArrow />
+            <PopoverCloseButton />
+            <PopoverHeader>Confirmation</PopoverHeader>
+            <PopoverBody>
+              Thank you for visiting! I will contact you soon.
+            </PopoverBody>
+          </PopoverContent>
+        </Popover>
+      </>
+    );
+  }
+
+  return (
+    <div>
+      <Stack
+        margin="0"
+        minHeight="100vh"
+        overflow="hidden"
+        boxSizing="border-box"
+        bgColor="black"
+        color="white"
+        p={5}
+      >
+        <Heading
+          bgGradient="linear(to-l ,#FF0080, #7928CA)"
+          bgClip="text"
+          as="h1"
+          fontSize="58px"
+          align="center"
+          fontWeight="bold"
+          fontFamily="Yeseva One"
+          pb={20}
         >
-          <Heading
-            as="h1"
-            fontSize="40px"
-            align="center"
-            bgGradient="linear(to-l, #7928CA,#FF0080)"
-            bgClip="text"
-          >
-            Contact Information
-          </Heading>
-          <Heading
-            bgGradient="linear(to-l ,#FF0080, #7928CA)"
-            bgClip="text"
-            size="lg"
-            pt={10}
-            mb={5}
-          >
-            Amanda D'Argenio
-          </Heading>
-          <Heading
-            bgGradient="linear(to-l ,#FF0080, #7928CA)"
-            bgClip="text"
-            size="md"
-          >
-            Phone: <span style={{color: "white"}}>(973)-632-1861</span>
-
-          </Heading>
-          <Heading
-            bgGradient="linear(to-l ,#FF0080, #7928CA)"
-            bgClip="text"
-            size="md"
-          >
-            Email:  <span style={{color: "white"}}><a target="blank" href="mailto:dargenioa14@gmail.com">dargenioa14@gmail.com</a></span>
-          </Heading>
-          <Heading
-            bgGradient="linear(to-l ,#FF0080, #7928CA)"
-            bgClip="text"
-            size="md"
-          >
-            Github: <span style={{color: "white"}}><a target="blank" href="https://github.com/dargenioa/">dargenioa</a></span>
-          </Heading>
-          <Heading
-            bgGradient="linear(to-l ,#FF0080, #7928CA)"
-            bgClip="text"
-            size="md"
-          >
-            Resume:  <span style={{color: "white"}}><a target="blank" href="https://drive.google.com/file/d/11uUKblrXRGSgKLXdtzU6nit2Ok7PV2Du/view?usp=sharing">View PDF</a></span>
-          </Heading>
-          <Heading
-            bgGradient="linear(to-l ,#FF0080, #7928CA)"
-            bgClip="text"
-            size="md"
-          >
-            LinkedIn:  <span style={{color: "white"}}><a target="blank" href="https://www.linkedin.com/in/amandadargenio/">Visit my LinkedIn</a></span>
-          </Heading>
-        </Stack>
-      </div>
-  
-    )
-
-};
+          Contact
+        </Heading>
+        <SimpleGrid p={10} columns={{ sm: 1, md: 2 }} spacing={150}>
+          <Box letterSpacing={3}>
+            <Heading
+              fontWeight="bold"
+              fontFamily="Yeseva One"
+              bgGradient="linear(to-l ,#FF0080, #7928CA)"
+              bgClip="text"
+              fontSize="40px"
+              mb={5}
+            >
+              Amanda D'Argenio
+            </Heading>
+            <Heading
+              bgGradient="linear(to-l ,#FF0080, #7928CA)"
+              bgClip="text"
+              size="md"
+              p={2}
+            >
+              Phone: <span style={{ color: "white" }}>(973)-632-1861</span>
+            </Heading>
+            <Heading
+              bgGradient="linear(to-l ,#FF0080, #7928CA)"
+              bgClip="text"
+              size="md"
+              p={2}
+            >
+              Email:{" "}
+              <span style={{ color: "white" }}>
+                <a target="blank" href="mailto:dargenioa14@gmail.com">
+                  dargenioa14@gmail.com
+                </a>
+              </span>
+            </Heading>
+            <Heading
+              bgGradient="linear(to-l ,#FF0080, #7928CA)"
+              bgClip="text"
+              size="md"
+              p={2}
+            >
+              Github:{" "}
+              <span style={{ color: "white" }}>
+                <a target="blank" href="https://github.com/dargenioa/">
+                  dargenioa
+                </a>
+              </span>
+            </Heading>
+            <Heading
+              bgGradient="linear(to-l ,#FF0080, #7928CA)"
+              bgClip="text"
+              size="md"
+              p={2}
+            >
+              Resume:{" "}
+              <span style={{ color: "white" }}>
+                <a
+                  target="blank"
+                  href="https://drive.google.com/file/d/11uUKblrXRGSgKLXdtzU6nit2Ok7PV2Du/view?usp=sharing"
+                >
+                  View PDF
+                </a>
+              </span>
+            </Heading>
+            <Heading
+              bgGradient="linear(to-l ,#FF0080, #7928CA)"
+              bgClip="text"
+              size="md"
+              p={2}
+            >
+              LinkedIn:{" "}
+              <span style={{ color: "white" }}>
+                <a
+                  target="blank"
+                  href="https://www.linkedin.com/in/amandadargenio/"
+                >
+                  Visit my LinkedIn Profile
+                </a>
+              </span>
+            </Heading>
+          </Box>
+          <Box>
+            <FormControl w="80%" id="email">
+              <FormLabel>Name</FormLabel>
+              <Input type="text" />
+              <FormHelperText pb={3}>
+                Please enter your full name
+              </FormHelperText>
+              <FormLabel>Email</FormLabel>
+              <Input type="email" />
+              <FormHelperText pb={3}>
+                Please enter your full name
+              </FormHelperText>
+              <FormLabel>Message</FormLabel>
+              <Textarea placeholder="Enter Message here" type="text" />
+              <SubmitButton />
+            </FormControl>
+          </Box>
+        </SimpleGrid>
+      </Stack>
+    </div>
+  );
+}
 
 export default Contact;

@@ -5,15 +5,9 @@ import {
   Center,
   Flex,
 } from "@chakra-ui/react";
-import "./sections.css";
 
 function Footer(props) {
   return (
-    // position: fixed;
-    // left: 0;
-    // bottom: 0;
-    // width: 100%;
-    // background-color: #202121;
     <Breadcrumb
       separator="|"
       fontSize="20px"
@@ -22,7 +16,6 @@ function Footer(props) {
       left={0}
       bottom={0}
       width="100%"
-      // bgGradient="linear(to-l, #7928CA,#FF0080)"
       bg={["primary.500", "primary.500"]}
       color={["primary.700", "primary.700"]}
       textAlign="center"
