@@ -155,7 +155,7 @@ function Contact() {
               <FormLabel>Email</FormLabel>
               <Input type="email" />
               <FormHelperText pb={3}>
-                Please enter your full name
+                Please enter your email address
               </FormHelperText>
               <FormLabel>Message</FormLabel>
               <Textarea placeholder="Enter Message here" type="text" />
