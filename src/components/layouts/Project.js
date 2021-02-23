@@ -49,7 +49,7 @@ function Project({ project }) {
       <Box fontWeight="bold" p={1} textAlign="center" separator="|">
         <Box>
           <Link
-            color="purple.600"
+            color="blue.500"
             target="blank"
             href={project.deploy}
             align="center"

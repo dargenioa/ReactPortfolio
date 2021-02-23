@@ -27,7 +27,7 @@ function Contact() {
         <Box>
           <Popover>
             <PopoverTrigger>
-              <Button bgColor="#7928CA">Submit</Button>
+              <Button bgColor="cyan.500">Submit</Button>
             </PopoverTrigger>
             <PopoverContent color="black">
               <PopoverArrow />
@@ -55,7 +55,7 @@ function Contact() {
         p={5}
       >
         <Heading
-          bgGradient="linear(to-l ,#FF0080, #7928CA)"
+          bgGradient="linear(to-l, cyan.300, blue.600)"
           bgClip="text"
           as="h1"
           fontSize="58px"
@@ -71,7 +71,7 @@ function Contact() {
             <Heading
               fontWeight="bold"
               fontFamily="Yeseva One"
-              bgGradient="linear(to-l ,#FF0080, #7928CA)"
+              bgGradient="linear(to-l, blue.600, cyan.300)"
               bgClip="text"
               fontSize="40px"
               mb={5}
@@ -79,7 +79,8 @@ function Contact() {
               Amanda D'Argenio
             </Heading>
             <Heading
-              bgGradient="linear(to-l ,#FF0080, #7928CA)"
+              // color="cyan.400"
+              bgGradient="linear(to-l, blue.600, cyan.300)"
               bgClip="text"
               size="md"
               p={2}
@@ -87,7 +88,8 @@ function Contact() {
               Phone: <span style={{ color: "white" }}>(973)-632-1861</span>
             </Heading>
             <Heading
-              bgGradient="linear(to-l ,#FF0080, #7928CA)"
+              // color="cyan.400"
+              bgGradient="linear(to-l, blue.600, cyan.300)"
               bgClip="text"
               size="md"
               p={2}
@@ -100,7 +102,8 @@ function Contact() {
               </span>
             </Heading>
             <Heading
-              bgGradient="linear(to-l ,#FF0080, #7928CA)"
+              // color="cyan.400"
+              bgGradient="linear(to-l, blue.600, cyan.300)"
               bgClip="text"
               size="md"
               p={2}
@@ -113,7 +116,8 @@ function Contact() {
               </span>
             </Heading>
             <Heading
-              bgGradient="linear(to-l ,#FF0080, #7928CA)"
+              // color="cyan.400"
+              bgGradient="linear(to-l, blue.600, cyan.300)"
               bgClip="text"
               size="md"
               p={2}
@@ -129,7 +133,8 @@ function Contact() {
               </span>
             </Heading>
             <Heading
-              bgGradient="linear(to-l ,#FF0080, #7928CA)"
+              // color="cyan.400"
+              bgGradient="linear(to-l, blue.600, cyan.300)"
               bgClip="text"
               size="md"
               p={2}

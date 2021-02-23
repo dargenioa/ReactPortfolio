@@ -26,7 +26,7 @@ function Home() {
     >
       <Box>
         <Heading
-          bgGradient="linear(to-l ,#FF0080, #7928CA)"
+          bgGradient="linear(to-l, blue.600, cyan.300)"
           bgClip="text"
           as="h1"
           fontSize="50px"
@@ -35,7 +35,7 @@ function Home() {
           Amanda D'Argenio
         </Heading>
         <Heading
-          bgGradient="linear(to-l ,#7928CA , #FF0080)"
+         bgGradient="linear(to-l, cyan.300,  blue.600)"
           bgClip="text"
           size="xl"
           pt={5}
@@ -48,12 +48,12 @@ function Home() {
             <Typewriter
               options={{
                 strings: [
-                  'Problem Solver',
-                  'Motivated by Challening Projects',
-                  'Great Listener',
-                  'Team Collaborator',
-                  'Effective Communicator',
-                  'Adaptability'
+                  "Problem Solver",
+                  "Motivated by Challening Projects",
+                  "Great Listener",
+                  "Team Collaborator",
+                  "Effective Communicator",
+                  "Adaptability",
                 ],
                 autoStart: true,
                 loop: true,
@@ -73,7 +73,7 @@ function Home() {
         <Box textAlign="center" marginTop={20}>
           <Heading
             p={5}
-            bgGradient="linear(to-l ,#7928CA , #FF0080)"
+            bgGradient="linear(to-l, blue.600, cyan.300)"
             bgClip="text"
           >
             About me
@@ -83,8 +83,9 @@ function Home() {
             and utilize my skills and work experience working for a global
             Fintech company offering an on-premises/SaaS/DaaS solution to
             clients. Recent graduate of Rutgers University Full-Stack Immersive
-            program as well as a Bachelor's Degree. Eager to use my experience
-            in JavaScript, React, Node.js, NoSQL and MySQL databases, responsive
+            program as well as a Bachelor's Degree in Business Administration
+            with a minor in Equine Science. Eager to use my experience in
+            JavaScript, React, Node.js, NoSQL and MySQL databases, responsive
             design using HTML/CSS and APIs to collaborate with teams and build
             upon applications. My education has provided me the experience to
             work in an Agile environment within development teams. I am
