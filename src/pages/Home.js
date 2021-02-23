@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import LandingLayout from "../components/layouts/Landing";
 import TextLoop from "react-text-loop";
+import Typewriter from "typewriter-effect";
 
 function Home() {
   return (
@@ -43,26 +44,32 @@ function Home() {
           Full Stack Developer
         </Heading>
         <Center color="white" pt={5}>
-          <TextLoop interval={2500}>
-            <Heading as="h6" size="md">
-              Problem Solver
-            </Heading>
-            <Heading as="h6" size="md">
-              Motivated by Challening Projects
-            </Heading>
-            <Heading as="h6" size="md">
-              Great Listener
-            </Heading>
-            <Heading as="h6" size="md">
-              Team Collaborator
-            </Heading>
-            <Heading as="h6" size="md">
-              Effective Communicator
-            </Heading>
-            <Heading as="h6" size="md">
-              Adaptability
-            </Heading>
-          </TextLoop>
+          <Heading
+           as="h6" size="md"
+           >
+          <Typewriter
+           onInit={(typewriter) => {
+           return typewriter
+           .typeString("Problem Solver")
+           .pauseFor(2000)
+           .deleteAll()
+           .typeString("Motivated by Challening Projects")
+           .pauseFor(2000)
+           .deleteAll()
+           .typeString("Great Listener")
+           .pauseFor(2000)
+           .deleteAll()
+           .typeString("Team Collaborator")
+           .pauseFor(2000)
+           .deleteAll()
+           .typeString("Effective Communicator")
+           .pauseFor(2000)
+           .deleteAll()
+           .typeString("Adaptability")
+           .start();
+            }}
+          />
+          </Heading>
         </Center>
       </Box>
       <SimpleGrid columns={{ sm: 1, md: 2 }} spacing={1}>
