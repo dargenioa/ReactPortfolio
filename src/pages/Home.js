@@ -44,31 +44,21 @@ function Home() {
           Full Stack Developer
         </Heading>
         <Center color="white" pt={5}>
-          <Heading
-           as="h6" size="md"
-           >
-          <Typewriter
-           onInit={(typewriter) => {
-           return typewriter
-           .typeString("Problem Solver")
-           .pauseFor(2000)
-           .deleteAll()
-           .typeString("Motivated by Challening Projects")
-           .pauseFor(2000)
-           .deleteAll()
-           .typeString("Great Listener")
-           .pauseFor(2000)
-           .deleteAll()
-           .typeString("Team Collaborator")
-           .pauseFor(2000)
-           .deleteAll()
-           .typeString("Effective Communicator")
-           .pauseFor(2000)
-           .deleteAll()
-           .typeString("Adaptability")
-           .start();
-            }}
-          />
+          <Heading as="h6" size="md">
+            <Typewriter
+              options={{
+                strings: [
+                  'Problem Solver',
+                  'Motivated by Challening Projects',
+                  'Great Listener',
+                  'Team Collaborator',
+                  'Effective Communicator',
+                  'Adaptability'
+                ],
+                autoStart: true,
+                loop: true,
+              }}
+            />
           </Heading>
         </Center>
       </Box>
@@ -88,12 +78,10 @@ function Home() {
           >
             About me
           </Heading>
-          <Text
-          fontSize="18px"
-          fontFamily="Helvetica" mb={3} align="left">
-            Dedicated Full Stack Developer seeking a new opportunity to
-            enhance and utilize my skills and work experience working for a
-            global Fintech company offering an on-premises/SaaS/DaaS solution to
+          <Text fontSize="18px" fontFamily="Helvetica" mb={3} align="left">
+            Dedicated Full Stack Developer seeking a new opportunity to enhance
+            and utilize my skills and work experience working for a global
+            Fintech company offering an on-premises/SaaS/DaaS solution to
             clients. Recent graduate of Rutgers University Full-Stack Immersive
             program as well as a Bachelor's Degree. Eager to use my experience
             in JavaScript, React, Node.js, NoSQL and MySQL databases, responsive
