@@ -49,7 +49,7 @@ function Home() {
               options={{
                 strings: [
                   "Problem Solver",
-                  "Motivated by Challening Projects",
+                  "Motivated by Challenging Projects",
                   "Great Listener",
                   "Team Collaborator",
                   "Effective Communicator",
