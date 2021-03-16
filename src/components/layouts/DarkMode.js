@@ -12,7 +12,7 @@ import Footer from "../sections/Footer";
 function DarkMode() {
   const { colorMode, toggleColorMode } = useColorMode();
   const bg = useColorModeValue("gray.200", "gray.900");
-  const color = useColorModeValue("cyan.800", "cyan.300");
+  const color = useColorModeValue("cyan.600", "cyan.200");
 
   return (
     <div>

@@ -26,22 +26,23 @@ function Home() {
     >
       <Box>
         <Heading
-          bgGradient="linear(to-l, blue.600, cyan.300)"
+          bgGradient="linear(to-l, cyan.400, blue.400, teal.300)"
           bgClip="text"
           as="h1"
-          fontSize="50px"
+          fontSize="100px"
           align="center"
+          fontFamily="Brush Script MT"
         >
           Amanda D'Argenio
         </Heading>
         <Heading
-         bgGradient="linear(to-l, cyan.300,  blue.600)"
+          bgGradient="linear(to-l, cyan.400, blue.400, teal.400)"
           bgClip="text"
-          size="xl"
           pt={5}
+          fontSize="25px"
           align="center"
         >
-          Full Stack Developer
+          Full Stack Developer | Frontend Developer
         </Heading>
         <Center color="white" pt={5}>
           <Heading as="h6" size="md">
@@ -73,7 +74,7 @@ function Home() {
         <Box textAlign="center" marginTop={20}>
           <Heading
             p={5}
-            bgGradient="linear(to-l, blue.600, cyan.300)"
+          bgGradient="linear(to-l, cyan.400, blue.300, teal.300)"
             bgClip="text"
           >
             About me
