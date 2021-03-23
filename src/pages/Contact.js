@@ -126,7 +126,7 @@ function Contact() {
               <span style={{ color: "white" }}>
                 <a
                   target="blank"
-                  href="https://drive.google.com/file/d/11uUKblrXRGSgKLXdtzU6nit2Ok7PV2Du/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1rGdAQdivzHCJw_0mSIduMfZwcuMAlwii/view?usp=sharing"
                 >
                   View PDF
                 </a>

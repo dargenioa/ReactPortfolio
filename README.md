@@ -14,11 +14,7 @@
 
 ## Description
 
-Welcome to my React Portfolio!  This is deploy on GithubPages and uses the Chakra-UI library.  It is mobile responsive and available in both Dark Mode and Light Mode.  It features my 6 pinned repositories of recent projects on my portfolio page.
-
-## VideoDemo
-
-![](./public/Portfolio.gif)
+Welcome to my React Portfolio!  This is deploy on GithubPages and uses the Chakra-UI library.  It is mobile responsive and available in both Dark Mode and Light Mode.  It features my 6 pinned repositories of recent projects on my portfolio page
 
 ## Installation
 
